@@ -1,3 +1,5 @@
+/* * SELECTS EVERYTHING ON THE PAGE AND SETS TO THE DEFAULT
+LISTED BELOW */
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +7,15 @@
 
 }
 
+
+/* THIS GIVES A GRAY BACKGROUND TO THE BODY */
 body {
     background-color: gray;
 }
 
+
+/* THIS IS THE PARENT CONTAINER WITH THE WITH BACKGROUND
+THAT WE ARE SEEING */
 .container-form {
     width: 50%;
     height: 100vh;
@@ -20,7 +27,9 @@ body {
 }
 
 
-/* GO HOME BUTTON AND ICON */
+/* HOME BUTTON AND ICON STARTS HERE*/
+
+
 
 .create-title {
     position: relative;
@@ -34,16 +43,21 @@ body {
     background-color: rgb(9, 255, 181);
     position: absolute;
     left: 5%;
-    top: 0px;
+    
 }
 
 /* GO HOME BUTTON AND ICON ENDS HERE */
+
+
 
 .container-form p {
     padding: 20px 0px 25px 0px;
 }
 
 /* STYLING THE SOCIAL BUTTONS */
+
+
+/* THIS CLASS GIVES THE SYLING FOR THE SOCIAL MEDIA BUTTONS */
 
 .form-class a {
     padding: 10px 20px;
@@ -55,16 +69,22 @@ body {
 
 }
 
+
+/* THIS SELECTS THE FIRST ANCHOR ELEMENT INSIDE THE form-class AND GIVES IT A BACKGROUND COLOR OF #3b5998*/
 .form-class a:nth-child(1) {
-    background-color: #3b5998;;
+    background-color: #3b5998;
 
 }
 
+
+/* THIS SELECTS THE second ANCHOR ELEMENT INSIDE THE form-class AND GIVES IT A BACKGROUND COLOR OF #26a7de*/
 .form-class a:nth-child(2) {
     background-color: #26a7de
 
 }
 
+
+/* THIS SELECTS THE third ANCHOR ELEMENT INSIDE THE form-class AND GIVES IT A BACKGROUND COLOR OF red*/
 .form-class a:nth-child(3) {
     background-color: red;
 
@@ -72,11 +92,15 @@ body {
 
 
 /* HORIZONTAL LINE WITH OR */
+
+/* the OR is in a class called .or */
 .or {
-    width: 60%;
+    width: 65%;
     margin: auto;
 }
 
+
+/* FIELDSET PUTS THE LINE AND ALL BORDERS ARE REMOVED EXCEPT BORDER TOP */
 fieldset {
     border: 2px solid gray;
     border-bottom: none;
@@ -85,9 +109,10 @@ fieldset {
 
     margin: 20px 0;
     
-    
 }
 
+
+/* lEGEND CONTAINS THE CIRCLE or. Legend alway places its content in the middle of fielset line */
 legend {
     padding: 8px 10px;
     border: 2px solid gray;
@@ -97,23 +122,29 @@ legend {
 
 /* FORM ELEMENTS START HERE */
 
+/* EACH ICON AND INPUT ELEMENT ARE IN A DIV CALLED "form.user" */
+
 .form-user {
     position: relative;
     width: 50%;
     margin: auto;
 }
 
+
+/* THIS IS FOR THE ICONS IN THE INPUTS */
 .form-user i {
-    position: absolute;
-    left: 7px;
+    position: absolute;  /* POSITIONED ABOSOLUTE TO MAKE*/ 
+    left: 7px;              /* IT REMAIN IN ITS CONTAINER*/
     top: 13px;
     font-size: 16px;
     color: lightblue
 }
 
+
+/* THIS IS THE INPUTE ELEMENTS */
 input {
-    width: 100%;
-    height: 40px;
+    width: 100%;   /*100% of its container*/
+    height: 40px;     
     text-indent: 30px;
     padding-top: 7px;
     border-radius: 10px;
@@ -122,34 +153,24 @@ input {
     
 }
 
+
+/* WHEN ANY INPUT IS CLICKED (FOCUS), THE OUTLINE WILL NOT SHOW */
 input:focus {
     outline: none;
 }
 
 
-label {
-    width: 16px;
-    padding-top: 0;
-
-    height: 12px;
-  
-}
-
-input[type="checkbox"]{
-    width: 16px;
-    height: 12px;
-    accent-color: rgb(9, 255, 181);
-  
-}
-
-::placeholder {
+/* THIS TARGETS THE PLACE HOLDER (TEXT) IN THE INPUTS */
+input::placeholder {
     font-size: 16px;
     color: lightblue;
 }
 
+
+/* THIS IS OUT BUTTON */
 .btn-btn{
    width: 30%;
-   padding: 10px 0;
+   padding: 10px;
     border-radius: 8px;
     border: none;
     background-color: rgb(9, 255, 181);
@@ -173,7 +194,14 @@ input[type="checkbox"]{
 /* MOBILE RESPOSIVENESS */
 
 
+/* at max screen size of 1300, width of 55% width applies */
+@media screen and (max-width: 1300px) {
+    .container-form {
+        width: 55%;
+        }
+}
 
+/* at max screen size of 1100, width of 60% width applies */
 @media (max-width: 1100px) {
 
     .container-form {
@@ -181,6 +209,8 @@ input[type="checkbox"]{
     }
 }
 
+
+/* at max screen size of 1300, width of 75 applies */
 @media screen and (max-width: 900px) {
 
     .container-form {
@@ -213,7 +243,7 @@ input[type="checkbox"]{
     .create-title .home-btn {
         
         left: 2%;
-        padding: 8px 10px;
+        padding: 2px px;
         
     }
 
