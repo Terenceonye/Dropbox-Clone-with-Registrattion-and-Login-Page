@@ -1,2 +1,1 @@
-# Dropbox-Clone-with-Registrattion-and-Login-Page
-Dropbox Clone with Registrattion and Login Page
+THIS PROJECT WAS DONE BY TERENE ONYEWEKE aka (MAYOR), onyeweketerence@gmail.com
