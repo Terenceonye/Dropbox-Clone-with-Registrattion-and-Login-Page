@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>FORM</title>
+</head>
+<body>
+    <div class="container-form">
+        <form action="" method="post" autocomplete="off">
+            <fieldset>
+                <legend>Personal Info</legend>
+
+                <label for="fname">Full name</label><br>
+                <input class="in" type="text" name="full name" id="fname" placeholder="Enter your full name" maxlength="5">
+                <br><br>
+                <label  for="mail">Email</label><br>
+                <input class="in" type="email" name="email" id="mail" placeholder="Enter email here" required>
+                <br><br>
+                <label for="num">Phone No</label><br>
+                <input class="in" type="tel" name="" id="num" placeholder="Enter phone number" disabled>
+                <br><br>
+
+                <label for="uname">Username</label><br>
+                <input class="in" type="text" name="" id="uname" placeholder="Enter username">
+            </fieldset>
+
+                
+                <br><br>
+                <label for="pass">Password</label><br>
+                <input class="in" type="password" name="" id="pass" placeholder="Enter password">
+
+                <p>Are You Obidient?</p>
+                <label for="y">Yes: </label>
+                <input type="radio" name="obi" id="y" value="yes">
+
+                <label for="n">No: </label>
+                <input type="radio" name="obi" id="n" value="no">
+
+                <p>Marital Status</p>
+
+                <label for="s">Single: </label>
+                <input type="radio" name="mstatus" id="s" value="single">
+
+                <label for="m">Married: </label>
+                <input type="radio" name="mstatus" id="m" value="married">
+
+                <label for="mplus">Married with a side chick: </label>
+                <input type="radio" name="mstatus" id="mplus" value="married-plus">
+
+                <label for="c">Complicated: </label>
+                <input type="radio" name="mstatus" id="c" value="complicated">
+                <br><br>
+
+                <label for="state">State of Origin: </label>
+                <br>
+                <select name="sor" id="state">
+                    <option value="">Choose state</option>
+                    <option value="lagos">Lagos</option>
+                    <option value="rivers">Rivers</option>
+                    <option value="imo">Imo State  </option>
+                    <option value="rivers">Rivers</option>
+                    <option value="imo">Imo State</option>
+                </select>
+
+                <br><br>
+
+                <label for="cert">Qualification: </label><br>
+                <select name="qualif" id="cert" multiple>
+                    <option value="">Choose Qualificatino</option>
+                    <option value="fslc">FSLC</option>
+                    <option value="ssce">SSCE</option>
+                    <option value="nd">ND</option>
+                    <option value="hnd">HND</option>
+                    <option value="bsc">BSC</option>
+                    <option value="msc">MSC</option>
+                    <option value="phd">PHD</option>
+                </select>
+
+                <br><br>
+
+                <label for="dob">Date of Birth:    </label>
+                <br>
+                <input class="in" type="date" name="dateofbirth" id="dob">
+                <br><br>
+
+                <label for="upload">Upload Passport: </label>
+                <br>
+                <input class="in" type="file" name="document" id="upload">
+
+                <br><br>
+
+                <label for="about">About You: </label>
+                <br>
+                <textarea name="aboutu" id="about" cols="100" rows="20"></textarea>
+                <br><br>
+
+                <input type="button" value="Register">
+                <input type="reset" value="Reset Form">
+        </form>
+
+
+    </div>
+</body>
+</html>

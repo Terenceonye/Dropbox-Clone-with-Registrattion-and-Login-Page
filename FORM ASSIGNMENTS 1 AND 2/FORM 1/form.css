@@ -1,0 +1,118 @@
+body {
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-form {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    background-image: url(./pexels-andreea-ch-1166644.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: lin;
+
+}
+
+.in {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    background-color: white;
+}
+
+::placeholder {
+    color: green;
+}
+
+in:focus {
+    outline: none;
+}
+
+input[type="radio"] {
+    accent-color: green;
+    border: 2px solid gray;
+}
+
+select {
+    width: 45%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 90%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+input[type="button"], input[type="reset"]{
+    padding: 10px 15px;
+    color: white;
+    background-color: green;
+    border: none;
+    font-size: 18px;
+    margin: 0 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+
+
+/* RESPONSIVENESS STARTS HERE */
+
+
+@media (max-width: 1100px) {
+
+    .container-form {
+    width: 70%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .container-form {
+    width: 75%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .container-form {
+    width: 80%;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .container-form {
+    width: 90%;
+    }
+
+}
+
+@media (max-width: 625px) {
+
+    .container-form {
+    width: 100%;
+    }
+
+    .create-title .home-btn {
+        
+        left: 2%;
+        padding: 8px 10px;
+        
+    }
+
+    
+}
+
